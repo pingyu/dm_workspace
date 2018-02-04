@@ -26,6 +26,10 @@ def load_nn(sess):
 
     return (X, y)
 
+
+X, y = load_nn(sess)
+
+
 def plot(img):
     plt.imshow(img.reshape([28,28]), cmap=plt.cm.gray_r, interpolation='nearest')
     plt.show()
@@ -45,5 +49,4 @@ def play(idx):
 
     print('label: %d, predict: %d' % (label, result))
 
-X, y = load_nn(sess)
 
